@@ -1,0 +1,255 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9295,        247]
+NotebookOptionsPosition[      7866,        211]
+NotebookOutlinePosition[      8302,        228]
+CellTagsIndexPosition[      8259,        225]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Analyzing Mathematica and Functions and Symbols and Visualization and Word \
+Clouds\
+\>", "Title",
+ CellChangeTimes->{{3.8669154905713644`*^9, 
+  3.866915504405882*^9}},ExpressionUUID->"b1ee586f-6e2e-4f4b-8b32-\
+30560cae924e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CanonicalName", "/@", 
+  RowBox[{"WolframLanguageData", "[", "\"\<Properties\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.866915510341708*^9, 3.866915523344863*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"07972609-177e-4481-9215-faa49809251c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Attributes\"\>", ",", "\<\"CharacterCount\"\>", 
+   ",", "\<\"CloudSupportNotes\"\>", ",", "\<\"CloudSupportStatus\"\>", 
+   ",", "\<\"CommonOptionValues\"\>", ",", "\<\"DateIntroduced\"\>", 
+   ",", "\<\"DateLastModified\"\>", ",", "\<\"DatesModified\"\>", 
+   ",", "\<\"DocumentationBasicExamples\"\>", 
+   ",", "\<\"DocumentationExampleCounts\"\>", 
+   ",", "\<\"DocumentationExampleInputs\"\>", 
+   ",", "\<\"DocumentationExampleText\"\>", ",", "\<\"EntityClasses\"\>", 
+   ",", "\<\"EponymousPeople\"\>", ",", "\<\"EqualPrecedenceSymbols\"\>", 
+   ",", "\<\"Frequencies\"\>", ",", "\<\"FullVersionIntroduced\"\>", 
+   ",", "\<\"FullVersionLastModified\"\>", 
+   ",", "\<\"FullVersionsModified\"\>", ",", "\<\"FunctionalityAreas\"\>", 
+   ",", "\<\"FunctionEssay\"\>", ",", "\<\"KeyboardShortcuts\"\>", 
+   ",", "\<\"LinkTrails\"\>", ",", "\<\"Memberships\"\>", ",", "\<\"Name\"\>",
+    ",", "\<\"OptionNames\"\>", ",", "\<\"Options\"\>", 
+   ",", "\<\"PlaintextUsage\"\>", ",", "\<\"PrecedenceRanks\"\>", 
+   ",", "\<\"Ranks\"\>", ",", "\<\"RelatedEntities\"\>", 
+   ",", "\<\"RelatedGuidePages\"\>", ",", "\<\"RelatedLinks\"\>", 
+   ",", "\<\"RelatedSymbols\"\>", ",", "\<\"RelationshipCommunityGraph\"\>", 
+   ",", "\<\"RelationshipGraph\"\>", ",", "\<\"ShortNotations\"\>", 
+   ",", "\<\"SubjectClassifications\"\>", ",", "\<\"SymbolsLinkingTo\"\>", 
+   ",", "\<\"SymbolsUsingAsAttribute\"\>", 
+   ",", "\<\"SymbolsUsingAsOption\"\>", ",", "\<\"TextStrings\"\>", 
+   ",", "\<\"Timeline\"\>", ",", "\<\"TimelineEvents\"\>", 
+   ",", "\<\"Translations\"\>", ",", "\<\"TypesetUsage\"\>", 
+   ",", "\<\"TypesetUsageNotes\"\>", ",", "\<\"URL\"\>", 
+   ",", "\<\"VersionIntroduced\"\>", ",", "\<\"VersionLastModified\"\>", 
+   ",", "\<\"VersionsModified\"\>", ",", "\<\"WolframDocumentationLink\"\>"}],
+   "}"}]], "Output",
+ CellChangeTimes->{3.8669155282064886`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"13e8913c-7925-440c-91f7-92e8e10317b7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Select", "[", 
+   RowBox[{
+    RowBox[{"StringContainsQ", "[", 
+     RowBox[{"#", ",", "\"\<Modified\>\""}], "]"}], "&"}], "]"}], "[", 
+  RowBox[{"CanonicalName", "/@", 
+   RowBox[{"WolframLanguageData", "[", "\"\<Properties\>\"", "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8669157249215508`*^9, 3.8669157488054094`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"ef52ef55-a37a-47ea-85b3-1c7241ac3ebe"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"DateLastModified\"\>", ",", "\<\"DatesModified\"\>", 
+   ",", "\<\"FullVersionLastModified\"\>", 
+   ",", "\<\"FullVersionsModified\"\>", ",", "\<\"VersionLastModified\"\>", 
+   ",", "\<\"VersionsModified\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8669157492024784`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"deeffab2-eb66-4458-95be-e53b7a34883a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AssociationMap", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"WolframLanguageData", "[", 
+     RowBox[{"\"\<Integrate\>\"", ",", "#"}], "]"}], "&"}], ",", 
+   RowBox[{
+    RowBox[{"Select", "[", 
+     RowBox[{
+      RowBox[{"StringContainsQ", "[", 
+       RowBox[{"#", ",", "\"\<Modified\>\""}], "]"}], "&"}], "]"}], "[", 
+    RowBox[{"CanonicalName", "/@", 
+     RowBox[{"WolframLanguageData", "[", "\"\<Properties\>\"", "]"}]}], 
+    "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8669156976490088`*^9, 3.8669157064168234`*^9}, {
+  3.866915758004032*^9, 3.8669157683370523`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"11a65e2f-5e42-4e4d-a754-661783426aa0"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"DateLastModified\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"\"Tue 16 Apr 2019\""}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            RowBox[{"2019", ",", "4", ",", "16"}], "}"}], ",", "\"Day\""}], 
+        "]"}]},
+     "DateObject",
+     Editable->False]}], ",", 
+   RowBox[{"\<\"DatesModified\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      TemplateBox[{
+        RowBox[{"\"Tue 3 Sep 1996\""}], 
+        RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              RowBox[{"1996", ",", "9", ",", "3"}], "}"}], ",", "\"Day\""}], 
+          "]"}]},
+       "DateObject",
+       Editable->False], ",", 
+      TemplateBox[{
+        RowBox[{"\"Thu 12 Jun 2003\""}], 
+        RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              RowBox[{"2003", ",", "6", ",", "12"}], "}"}], ",", "\"Day\""}], 
+          "]"}]},
+       "DateObject",
+       Editable->False], ",", 
+      TemplateBox[{
+        RowBox[{"\"Wed 9 Jul 2014\""}], 
+        RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              RowBox[{"2014", ",", "7", ",", "9"}], "}"}], ",", "\"Day\""}], 
+          "]"}]},
+       "DateObject",
+       Editable->False], ",", 
+      TemplateBox[{
+        RowBox[{"\"Tue 16 Apr 2019\""}], 
+        RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              RowBox[{"2019", ",", "4", ",", "16"}], "}"}], ",", "\"Day\""}], 
+          "]"}]},
+       "DateObject",
+       Editable->False]}], "}"}]}], ",", 
+   RowBox[{"\<\"FullVersionLastModified\"\>", "\[Rule]", "\<\"12\"\>"}], ",", 
+   RowBox[{"\<\"FullVersionsModified\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"3\"\>", ",", "\<\"5\"\>", ",", "\<\"10\"\>", 
+      ",", "\<\"12\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"VersionLastModified\"\>", "\[Rule]", "12"}], ",", 
+   RowBox[{"\<\"VersionsModified\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "5", ",", "10", ",", "12"}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8669157787585363`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"afc422bb-9e74-4c6a-8113-8318b7146a3d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Buckyball Graph is not in the system", "Section",
+ CellChangeTimes->{{3.8669161480904303`*^9, 
+  3.866916155485834*^9}},ExpressionUUID->"b14e84cd-5fab-4918-94ee-\
+65564385fae5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"WolframLanguageData", "[", 
+  RowBox[{"\"\<BuckyballGraph\>\"", ",", "\"\<VersionsModified\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8669161144255505`*^9, 3.8669161245755215`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"8a4105c1-a100-4cb0-a3c7-37f0558d2b3f"],
+
+Cell[BoxData[
+ RowBox[{"Missing", "[", 
+  RowBox[{"\<\"UnknownEntity\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"WolframLanguageSymbol\"\>", ",", "\<\"BuckyballGraph\"\>"}], 
+    "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{3.8669161290853524`*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"f9ca4c8f-1ecd-43d8-af05-48a0bd714839"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1152., 585.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (July 8, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1ddafe7b-e1e5-4b99-bb91-4a677c424ce1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 236, 6, 160, "Title",ExpressionUUID->"b1ee586f-6e2e-4f4b-8b32-30560cae924e"],
+Cell[CellGroupData[{
+Cell[841, 32, 269, 4, 28, "Input",ExpressionUUID->"07972609-177e-4481-9215-faa49809251c"],
+Cell[1113, 38, 1991, 32, 170, "Output",ExpressionUUID->"13e8913c-7925-440c-91f7-92e8e10317b7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3141, 75, 442, 10, 28, "Input",ExpressionUUID->"ef52ef55-a37a-47ea-85b3-1c7241ac3ebe"],
+Cell[3586, 87, 396, 7, 32, "Output",ExpressionUUID->"deeffab2-eb66-4458-95be-e53b7a34883a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4019, 99, 681, 16, 48, "Input",ExpressionUUID->"11a65e2f-5e42-4e4d-a754-661783426aa0"],
+Cell[4703, 117, 2256, 63, 75, "Output",ExpressionUUID->"afc422bb-9e74-4c6a-8113-8318b7146a3d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6996, 185, 183, 3, 67, "Section",ExpressionUUID->"b14e84cd-5fab-4918-94ee-65564385fae5"],
+Cell[CellGroupData[{
+Cell[7204, 192, 290, 5, 28, "Input",ExpressionUUID->"8a4105c1-a100-4cb0-a3c7-37f0558d2b3f"],
+Cell[7497, 199, 329, 7, 32, "Output",ExpressionUUID->"f9ca4c8f-1ecd-43d8-af05-48a0bd714839"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
